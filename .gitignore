@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.ty_cache/
+*.pyc
+.env
+.local/
+*.sqlite3*
+backups/
+frontend/node_modules/
+frontend/dist/
+*.egg-info/
+*.tsbuildinfo
