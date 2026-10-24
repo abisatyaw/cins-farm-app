@@ -1,0 +1,14 @@
+services:
+  farm:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - farm-data:/app/.local
+      - farm-backups:/app/backups
+    environment:
+      FARM_COOKIE_SECURE: "false"
+    restart: unless-stopped
+volumes:
+  farm-data:
+  farm-backups:
